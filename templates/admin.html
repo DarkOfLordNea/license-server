@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>License List</h1>
+    <table border="1">
+        <tr>
+            <th>Key</th>
+            <th>Type</th>
+            <th>Expire</th>
+        </tr>
+        {% for k in keys %}
+        <tr>
+            <td>{{k[0]}}</td>
+            <td>{{k[1]}}</td>
+            <td>{{k[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html> 
